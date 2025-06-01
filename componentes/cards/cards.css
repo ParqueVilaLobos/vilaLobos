@@ -1,0 +1,47 @@
+#cards {
+    height: 100%;
+    width: 100%;
+    padding: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.card {
+    height: 90%;
+    flex: 1;
+    background-color: #AD97C7;
+    border-radius: 2vh;
+    display: grid;
+    grid-template-rows:  .7fr 2fr 1fr;
+}
+
+.textCard {
+    color: white;
+    font-weight: bold;
+    padding: 5vh;
+}
+
+.imgCard {
+    padding: 5vh;
+}
+
+.imgCard div{
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+}
+
+.btnCard {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 5vh;
+}
+
+.btnCard a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}

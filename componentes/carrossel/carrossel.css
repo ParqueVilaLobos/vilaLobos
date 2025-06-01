@@ -1,0 +1,39 @@
+.iconSeta {
+    margin: 1vh;
+}
+
+#carrossel{
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+.section-i {
+    display: flex;
+    justify-content: center;
+}
+
+#mainCarrossel {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 100%;
+}
+
+#mainCarrossel section {
+   background-color: gray;
+   border-radius: 2vh;
+   height: 100%;
+   width: 100%;
+}
+
+#footCarrossel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 1vh;
+    gap: 1.5vh;
+}

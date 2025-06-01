@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    height: 250vh;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+}
+
+header {
+    background-color: green;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: .7fr .5fr .7fr 1fr .7fr;
+    gap: 15vh;
+}
+
+#conteinerConheca {         
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    
+    padding: 5vh;
+    background-color: white;
+}
+
+
+#conteinerNos {
+    font-size: 1.5rem;
+    background-color: #E2EA9D;
+    padding: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#conteinerNos section {
+   padding: 2vh;
+}
+
+#conteinerNos h2 {
+    border-left: 3px solid black;
+    padding-left: 2vh;
+    margin-left: 5vh;
+}
+
+#conteinerNos p {
+    text-indent: 2em; 
+    line-height: 1.5; 
+    margin-bottom: 1em;
+}
+
+#conteinerNos ul {
+    padding-left: 2em;
+}
+
+#conteinerParceiros {
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+    padding: 5vh;
+    background-color: white;
+}
+
+#conteinerProgramacao {
+    display: flex;
+    background-color: white;
+}
+
+#conteinerFinanciadores {
+    background-color: white;
+}
