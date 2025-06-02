@@ -1,20 +1,18 @@
 #cards {
-    height: 100%;
-    width: 100%;
     padding: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2vh;
+    gap: 15vh;
 }
 
 .card {
-    height: 90%;
-    flex: 1;
+    height: 100%;
+    flex: .8;
     background-color: #AD97C7;
     border-radius: 2vh;
     display: grid;
-    grid-template-rows:  .7fr 2fr 1fr;
+    grid-template-rows: .7fr 2fr 1fr;
 }
 
 .textCard {

@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="./componentes/footer/footer.css">
     <link rel="stylesheet" href="./componentes/carrossel/carrossel.css">
     <link rel="stylesheet" href="./componentes/cards/cards.css">
+    <link rel="stylesheet" href="./componentes/cards/card-responsividade.css">
+    <link rel="stylesheet" href="./componentes/carrossel/carrossel-responsividade.css">
 </head>
 <body>
-    <!-- Componente Header -->
     <?php include('./componentes/header/header.php'); ?>
-    
-    <!-- Fim do componente -->
     <main>
         <section id="conteinerConheca">
            <?php 
