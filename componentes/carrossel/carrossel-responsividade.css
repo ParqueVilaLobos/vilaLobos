@@ -1,0 +1,10 @@
+@media (max-width: 800px){
+
+    #mainCarrossel {
+        justify-content: center;
+    }
+
+    #mainCarrossel section {
+        height: 70%;
+    }
+}

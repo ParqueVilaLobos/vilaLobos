@@ -1,0 +1,50 @@
+
+@media (max-width: 2000px) {
+    #conteinerProgramacao {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #cards {
+        width: 100%;
+        padding: 1vh;
+    }
+    
+    .card {
+        padding: 2vh;
+        grid-template-rows: 0;
+        grid-template-areas: "img img . ."
+                             "img img . ."
+                             "img img . title"
+                             "img img . btn"
+                            
+    }
+
+    .textCard {
+        grid-area: title;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding: 0 1vh 1vh 0;
+    }
+
+    .imgCard {
+        grid-area: img;
+        padding: 0;
+    }
+
+    .imgCard div{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .btnCard {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        padding: 5vh;
+        grid-area: btn;
+    }
+}
+
