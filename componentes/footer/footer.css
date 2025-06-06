@@ -1,59 +1,57 @@
 footer {
   background-color: #4B7736;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2vh;
+  padding: 1vh;
 }
 
-footer .imgs {
+.imgs {
   display: flex;
-  width: 1000px;
-  margin: 0px 0px 20px 0px;
+  gap: .5vh;
+  align-items: center;
+  width: 100%;
 }
 
-footer .imgs img {
-  height: 100px;
-  margin: 0px 60px 0px 60px;
+.imgs img {
+  height: auto;
+  width: 100%;
 }
 
 footer .imgs hr {
   width: 2px;
-  height: 100px;
+  height: 70%;
   background-color: rgb(255, 255, 255);
 }
 
-footer .textos {
+.textos {
   display: flex;
   justify-content: space-between;
   color: white;
-  margin: 0px 60px 0px 60px;
-
+  font-size: 1.5vw;
 }
-footer .links{
+
+.links {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  padding: 0;  
 }
 
-/* From Uiverse.io by 0800Gonza */ 
-
-footer .links .card {
-  width: fit-content;
-  height: fit-content;
+.links .card {
+  width: auto;
+  height: auto;
   background-color: transparent;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  padding: 25px 25px;
-  gap: 20px;
+  justify-content: space-between;
   
 }
 
-/* for all social containers*/
 footer .links .socialContainer {
-  width: 52px;
-  height: 52px;
+  width: 5dvh;
+  height: 5dvh;
+
   border-radius: 50%;
   background-color: #AD97C7;
   display: flex;
@@ -61,24 +59,23 @@ footer .links .socialContainer {
   justify-content: center;
   overflow: hidden;
   transition-duration: 1s;
-  
 }
-/* instagram*/
+
 footer .links .containerOne:hover {
   background-color: #d62976;
   transition-duration: 0.3s;
 }
-/* twitter*/
+
 footer .links .containerTwo:hover {
   background-color: #00acee;
   transition-duration: 0.3s;
 }
-/* linkdin*/
+
 footer .links .containerThree:hover {
   background-color: #0072b1;
   transition-duration: 0.3s;
 }
-/* Whatsapp*/
+
 footer .links .containerFour:hover {
   background-color: green;
   transition-duration: 0.3s;

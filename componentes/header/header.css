@@ -1,42 +1,50 @@
 header {
     background-color: #4B7736;
-    padding: 2vh;
+    padding: 0vh;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
 }
 
 header hr {
     width: 2px;
-    height: 5vw;
+    height: 70%;
     background-color: rgb(255, 255, 255);
-    margin-top: 5px;
 }
 
-header .parte_de_cima {
+.parte_de_cima {
+     gap: .5vh;
     display: flex;
-    width: 1000px;
+    align-items: center;
+    width: 100%;
 }
 
-header .parte_de_cima img {
-    height: 100px;
-    margin:0px 20px 0px 20px;
+.parte_de_baixo { 
+    display: flex;
+    width: 100%;
 }
 
-header .parte_de_baixo  ul li a {
+.parte_de_cima img {
+    height: auto;
+    width: 100%;
+}
+
+.parte_de_baixo  ul li a {
     color: white;
     text-decoration: none;
     border-bottom: 1px solid white;
 }
 
-header .parte_de_baixo ul li a:hover{
+.parte_de_baixo ul li a:hover{
     border-bottom: 2px solid white;
     transition: width 1s ease-out;
     animation: 2s;
 }
 
-header .parte_de_baixo ul {
+.parte_de_baixo ul {
+    width: 100%;
     list-style: none;
+    padding: 2VH;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
-    padding-top: 10px;
-    margin:0px 20px 0px 20px;
+    font-size: 2vw;
 }
