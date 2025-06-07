@@ -1,22 +1,22 @@
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 1000px){
     body {
         width: 100%;
     }
 
     main {
+        grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
         background-color: pink;
     }
 
-    #conteinerConheca {
-     
+    #conteinerNos h2{
+        margin-left: 1dvh;
+        padding: 1dvh;
     }
 
-    .parte_de_cima { 
-        
+    #conteinerNos{ 
+        padding: 2dvh;
     }
-    .parte_de_baixo a{ 
-        /* font-size: .3rem; */
-    }
+
 
     /* footer */
     footer {
@@ -35,5 +35,48 @@
 
     .textos {
         flex-wrap: wrap;
+    }
+
+    /* cards */
+     #cards {       
+        padding: 3dvh;
+        gap: 2dvh;
+        flex-direction: column;
+    } 
+    
+    .card {
+        width: 100%;         
+    }
+
+    /* Carrosel */
+    #conteinerConheca {          
+        padding: 2dvh;
+    }
+    #conteinerParceiros {   
+        padding: 2dvh;
+    }
+    #conteinerFinanciadores {   
+        padding: 2dvh;
+    }    
+
+    #carrossel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: none;
+    }
+
+    #mainCarrossel {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #mainCarrossel section {
+        height: 70%;
+    }
+
+    .section-i {
+        display: none;
     }
 }
