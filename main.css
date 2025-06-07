@@ -14,7 +14,7 @@ body {
     width: 100%;
     background-color: white;
     display: grid;
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-rows: 1.5fr 10fr 1fr;
 }
 
 header {
@@ -25,19 +25,17 @@ main {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: .7fr .5fr .7fr 1fr .7fr;
-    gap: 15vh;
+    grid-template-rows: .7fr .5fr .7fr .5fr .7fr;
 }
 
-#conteinerConheca {         
+#conteinerConheca {        
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 2svh;
     
     padding: 5vh;
     background-color: white;
 }
-
 
 #conteinerNos {
     font-size: 1.5rem;
@@ -54,34 +52,36 @@ main {
 
 #conteinerNos h2 {
     border-left: 3px solid black;
-    padding-left: 2vh;
-    margin-left: 5vh;
+    padding-left: 2dvh;
+    margin-left: 5dvh;
+    font-size: 4vw;
 }
 
 #conteinerNos p {
     text-indent: 2em; 
     line-height: 1.5; 
     margin-bottom: 1em;
+    font-size: 2vw;
 }
 
-#conteinerNos ul {
+#conteinerNos ul{
     padding-left: 2em;
+    font-size: 2vw;
 }
 
 #conteinerParceiros {
     display: flex;
     gap: 2vh;
     flex-direction: column;
-    padding: 5vh;
+    padding: 5dvh;
     background-color: white;
 }
 
 #conteinerProgramacao {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     background-color: white;
 }
 
 #conteinerFinanciadores {
+    padding: 5dvh;
     background-color: white;
 }

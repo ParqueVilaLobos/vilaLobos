@@ -1,8 +1,12 @@
 <header>
     <div class="parte_de_cima">
-        <img src="./public/LogoCeaplam.png" alt="">
+        <div>
+            <img src="./public/LogoCeaplam.png" alt="">
+        </div>
         <hr>
-        <img src="./public/logoElementos.png" alt="">
+        <div>
+            <img src="./public/logoElementos.png" alt="">
+        </div>
     </div>
     <div class="parte_de_baixo">
         <ul>
