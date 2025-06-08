@@ -1,0 +1,144 @@
+/*cores {
+  --verde-escuro: #4D7033;
+  --verde-claro: #E5F0B3;
+  --amarelo-claro: #FCFCE4;
+  --roxo-claro: #BCA7D9;
+}*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    height: 250vh;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    
+}
+
+h1 {
+  font-size: 2rem;      
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 2fr 0.5fr 0.8fr 1fr;
+}
+
+
+#containerGestao{        
+    padding: 5vh;
+    font-size: 1.5rem;
+}
+
+
+#containerGestao2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 5vh;
+
+}
+
+#containerGestao2 > div {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #FCFCE4;
+  font-size: 20px;
+  border: 2px  #DDE0B4; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+}
+
+#containerHistoria{        
+    display: flex;
+    flex-direction: column;
+    gap: 2svh;
+    padding: 5vh;
+    background-color: #E5F0B3;
+    font-size: 1.5rem;
+}
+
+
+#containerHistoria .grid-imagens img:hover {
+  transform: scale(1.05);
+}
+
+
+#containerVilaLobos{        
+    display: flex;
+    flex-direction: column;
+    gap: 2svh;
+    padding: 5vh;
+    background-color: #FCFCE4;
+    font-size: 1.5rem;
+}
+
+#containerVilaLobos2{        
+    display: flex;
+    flex-direction: column;
+    gap: 2svh;
+    padding: 5vh;
+    background-color: #FCFCE4;
+    font-size: 1.5rem;
+}
+
+
+#containerCEAPAM{        
+    display: flex;
+    flex-direction: column;
+    gap: 2svh;
+    padding: 5vh;
+    background-color: #E5F0B3;
+    font-size: 1.5rem;
+}
+
+#containerCEAPAM > ul{        
+    padding: 25PX;
+   
+}
+
+/* imagens*/
+
+.grid-imagens {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+ .grid-imagens img {
+  width: 250px;
+  height: 250px;
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  background-color: rgb(75, 75, 75);
+}
+
+
+
+
+
+
+
+ 
+
+
+
