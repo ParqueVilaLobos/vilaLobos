@@ -59,20 +59,7 @@
         padding: 2dvh;
     }    
 
-    #carrossel {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        grid-template-columns: none;
-    }
-
-    #mainCarrossel {
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-    }
-
-    #mainCarrossel section {
+    .mainCarrossel section {
         height: 70%;
     }
 
