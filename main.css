@@ -14,7 +14,8 @@ body {
     width: 100%;
     background-color: white;
     display: grid;
-    grid-template-rows: 1.5fr 10fr 1fr;
+    grid-template-rows: .5fr 12fr 1fr;
+    gap: 5vh;
 }
 
 header {
@@ -25,16 +26,15 @@ main {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: .7fr .5fr .7fr .5fr .7fr;
+    grid-template-rows: .5fr .5fr .7fr .5fr .7fr;
 }
 
 #conteinerConheca {        
     display: flex;
-    flex-direction: column;
-    gap: 2svh;
+    justify-content: center;
+    align-items: center;
     
-    padding: 5vh;
-    background-color: white;
+    padding: 2.5vh;
 }
 
 #conteinerNos {
@@ -44,6 +44,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow: auto;
 }
 
 #conteinerNos section {
@@ -71,10 +72,9 @@ main {
 
 #conteinerParceiros {
     display: flex;
-    gap: 2vh;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 5dvh;
-    background-color: white;
 }
 
 #conteinerProgramacao {
