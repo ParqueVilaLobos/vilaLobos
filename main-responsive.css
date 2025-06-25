@@ -4,8 +4,8 @@
     }
 
     main {
-        grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
-        background-color: pink;
+        grid-template-rows: 10% 10% 10% 1fr 10%;
+        gap: 5dvh;
     }
 
     #conteinerNos h2{
@@ -16,7 +16,6 @@
     #conteinerNos{ 
         padding: 2dvh;
     }
-
 
     /* footer */
     footer {
@@ -45,13 +44,59 @@
     } 
     
     .card {
-        width: 100%;         
+        width: 100%;  
     }
 
     /* Carrosel */
-    #conteinerConheca {          
-        padding: 2dvh;
+    #conteinerConheca {       
+        padding: 0vh;
     }
+    
+    .conhecaInside {
+        padding: 0;
+        grid-template-rows: 4fr 1fr;
+    }
+
+    .btnArrow {
+       display: none;
+    }
+
+    .btnCarrossel {
+       padding: 1dvh;
+       justify-content: center;
+       background-color: green;
+       color: white
+    }
+
+    .entireCarrossel {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 1dvh;
+    }
+
+    .conhecaLeft {
+        width: 50%;
+        text-align: center;
+        flex: 1;
+        align-items: center;
+        padding-left: 2dvh;
+        padding-right: 2dvh;
+    }
+
+    .footCarrossel {
+        align-items: start;
+    }
+  
+    .conhecaRight {
+        flex: 2;      
+    }
+
+    .carrossel img{
+        width: 70% !important;
+    }
+
     #conteinerParceiros {   
         padding: 2dvh;
     }
@@ -59,11 +104,40 @@
         padding: 2dvh;
     }    
 
-    .mainCarrossel section {
+    /* .mainCarrossel section {
         height: 70%;
-    }
+    } */
 
     .section-i {
         display: none;
+    }
+    .footCarrossel label {
+        width: 2dvh;
+        height: 2dvh;
+    }
+}
+
+@media (max-width: 500px){
+  
+    main {
+        grid-template-rows: 8% 8% 10% 2fr 10%;
+    }
+
+    #conteinerConheca {        
+       /* background-color: gray; */
+    }
+
+     .conhecaInside {
+        height: 100%;
+        padding-bottom: 5vh;
+    }
+
+    .carrossel img{
+        width: 75% !important;
+    }
+
+    .footCarrossel label {
+        width: 1dvh;
+        height: 1dvh;
     }
 }

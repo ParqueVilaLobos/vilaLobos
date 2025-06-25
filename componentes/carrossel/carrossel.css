@@ -1,9 +1,16 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 .iconSeta {
     margin: 1vh;
 }
 
 .carrossel{
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,17 +27,74 @@
     justify-content: start;
     align-items: start;
     height: 100%;
-    width: 85%;
+    width: 100%;
 }
 
 .mainCarrossel input{
     display: none;
 }
 
+
+.conhecaInside {
+    padding: 2vh 15vh  2vh 15vh;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10fr 1fr;
+}
+
+.entireCarrossel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.conhecaLeft {
+    /* padding: 10dvh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1dvh;
+    gap: 2dvh;
+}
+
+.conhecaLeft > h2 {
+    font-size: 1.5vw;
+}
+.conhecaLeft > p {
+    font-size: 1vw;
+}
+
+.btnCarrossel {
+    color: gray;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 1dvh;
+    border: none;
+    font-size: 1vw;
+    font: bold;
+    width: 100%;
+    text-align: start;
+}
+
+.btnCarrossel:hover > .btnArrow  {   
+    transition: 1s initial;
+    color: black;
+}
+
+.conhecaRight {
+    overflow: hidden;
+    /* background-color: rgb(148, 148, 148); */
+}
+
+.footCarrossel {
+
+    /* background-color: orange; */
+}
+
 .slider {
     overflow: hidden;
-    background-color: gray;
-    border-radius: 2vh;
+    background-color: transparent;
     height: 100%;
     width: 100%;
 }
@@ -40,6 +104,7 @@
     height: 100%;
     width: 500%;
     transition: transform 0.5s ease;
+    /* background-color: red; */
 }
 
 .sliderWrapper > div{
@@ -51,6 +116,10 @@
     font-size: 4vw;
 }
 
+.sliderWrapper div > img{
+    height: auto;
+    width: 100%;
+}
 
 .footCarrossel {
     width: 100%;
@@ -69,6 +138,38 @@
     cursor: pointer;
     transition: background 0.3s;
 }
+
+.footCarrossel label:hover {
+    transition: 1s initial;
+    background-color: black;
+}
+
+/*  */
+.sliderWrapperSecond {
+    display: flex;
+    height: 100%;
+    width: 300%;
+    transition: transform 0.5s ease;
+    padding: 2dvh;
+    gap: 1vh;
+    /* background-color: red; */
+}
+
+.sliderWrapperSecond > div{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    background-color: #F8F8F8;
+}
+
+.sliderWrapperSecond div > img{
+    height: auto;
+    width: 100%;
+}
+
 
 
 #radio1:checked ~ .slider .sliderWrapper {
@@ -106,22 +207,12 @@
 }
 
 
-
-#radio1Cr2:checked ~ .slider .sliderWrapper {
+#radio1Cr2:checked ~ .slider .sliderWrapperSecond {
     transform: translateX(0%);
 }
 
-#radio2Cr2:checked ~ .slider .sliderWrapper {
-    transform: translateX(-20%);
-}
-#radio3Cr2:checked ~ .slider .sliderWrapper {
-    transform: translateX(-40%);
-}
-#radio4Cr2:checked ~ .slider .sliderWrapper {
-    transform: translateX(-60%);
-}
-#radio5Cr2:checked ~ .slider .sliderWrapper {
-    transform: translateX(-80%);
+#radio2Cr2:checked ~ .slider .sliderWrapperSecond {
+    transform: translateX(-30%);
 }
 
 
@@ -131,35 +222,16 @@
 #radio2Cr2:checked ~ .footCarrossel #label2Cr2 {
     background-color: black;
 }
-#radio3Cr2:checked ~ .footCarrossel #label3Cr2 {
-    background-color: black;
-}
-#radio4Cr2:checked ~ .footCarrossel #label4Cr2 {
-    background-color: black;
-}
-#radio5Cr2:checked ~ .footCarrossel #label5Cr2 {
-    background-color: black;
-}
 
 
 
-#radio1Cr3:checked ~ .slider .sliderWrapper {
+#radio1Cr3:checked ~ .slider .sliderWrapperSecond {
     transform: translateX(0%);
 }
 
-#radio2Cr3:checked ~ .slider .sliderWrapper {
+#radio2Cr3:checked ~ .slider .sliderWrapperSecond {
     transform: translateX(-20%);
 }
-#radio3Cr3:checked ~ .slider .sliderWrapper {
-    transform: translateX(-40%);
-}
-#radio4Cr3:checked ~ .slider .sliderWrapper {
-    transform: translateX(-60%);
-}
-#radio5Cr3:checked ~ .slider .sliderWrapper {
-    transform: translateX(-80%);
-}
-
 
 #radio1Cr3:checked ~ .footCarrossel #label1Cr3 {
     background-color: black;
@@ -167,14 +239,3 @@
 #radio2Cr3:checked ~ .footCarrossel #label2Cr3 {
     background-color: black;
 }
-#radio3Cr3:checked ~ .footCarrossel #label3Cr3 {
-    background-color: black;
-}
-
-#radio4Cr3:checked ~ .footCarrossel #label4Cr3 {
-    background-color: black;
-}
-#radio5Cr3:checked ~ .footCarrossel #label5Cr3 {
-    background-color: black;
-}
-

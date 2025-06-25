@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./componentes/cards/card-responsividade.css">
     <link rel="stylesheet" href="./componentes/carrossel/carrossel-responsividade.css">
     <link rel="stylesheet" href="./main-responsive.css">
-    <script src="./componentes/carrossel/carrossel.js" defer></script>
+    <!-- <script src="./componentes/carrossel/carrossel.js" defer></script> -->
 </head>
 <body>
       <header>
@@ -51,7 +51,7 @@
                     <a href="./pages/visita/index.html">Visitas</a>
                 </li>
                 <li>
-                    <a href="">Institucional</a>
+                    <a href="">Institucional</a>t
                 </li>
                 <li>
                     <a href="./pages/programação/programação/index.html">Progamação</a>
@@ -65,32 +65,57 @@
     
     <main>
         <section id="conteinerConheca">
-            <section class="carrossel">
-              <section class="mainCarrossel">
-                  <h2>Conheça CEAPLAM</h2>
-                  <input type="radio" name="radio-btn" id="radio1" checked>
-                  <input type="radio" name="radio-btn" id="radio2">
-                  <input type="radio" name="radio-btn" id="radio3"> 
-                  <input type="radio" name="radio-btn" id="radio4">
-                  <input type="radio" name="radio-btn" id="radio5"> 
-                  <section class="slider">
-                     <section class="sliderWrapper">
-                        <div class="fisrt">1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
-                        <div>5</div>
-                     </section>
+          
+          <section class="conhecaInside">
+            <div class="entireCarrossel">
+              <div class="conhecaLeft">
+                <h2>Conheca CEAPLAM</h2>
+                <p>CEAPLA é um centro de pesquisa e extensão da UNESP que trabalha com questões ambientais, utilizando ferramentas de análise e planejamento ambiental para contribuir com o conhecimento e formação de profissionais. </p>
+                <button class="btnCarrossel">
+                  <h2>Ler mais</h2>
+                  <i data-lucide="circle-chevron-right" class="btnArrow"></i>
+                </button>
+              </div>
+              <div id="conhecaRight">
+                <section class="carrossel">
+                  <section class="mainCarrossel">
+                      <input type="radio" name="radio-btn" id="radio1" checked>
+                      <input type="radio" name="radio-btn" id="radio2">
+                      <input type="radio" name="radio-btn" id="radio3"> 
+                      <input type="radio" name="radio-btn" id="radio4">
+                      <input type="radio" name="radio-btn" id="radio5"> 
+                      <section class="slider">
+                        <section class="sliderWrapper">
+                            <div class="fisrt">
+                              <img src="./public/flores.jpg" alt="">
+                            </div>
+                            <div>
+                              <img src="./public/criancas.jpg" alt="">
+                            </div>
+                            <div>
+                              <img src="./public/spiral.jpg" alt="">
+                            </div>
+                            <div>
+                              <img src="./public/casa-ceampla.jpg" alt="">
+                            </div>
+                            <div>
+                              <img src="./public/cogumelo.jpg" alt="">
+                            </div>
+                        </section>
+                      </section>
                   </section>
-                  <div class="footCarrossel">
-                      <label id="label1" for="radio1"></label>
-                      <label id="label2" for="radio2"></label>
-                      <label id="label3" for="radio3"></label>
-                      <label id="label4" for="radio4"></label>
-                      <label id="label5" for="radio5"></label>
-                  </div>
-              </section>
+                </section>
+              </div>
+            </div>
+            <section class="footCarrossel">
+              <label id="label1" for="radio1"></label>
+              <label id="label2" for="radio2"></label>
+              <label id="label3" for="radio3"></label>
+              <label id="label4" for="radio4"></label>
+              <label id="label5" for="radio5"></label>
+            </section>
           </section>
+
         </section>
 
         <section id="conteinerNos">
@@ -119,24 +144,32 @@
                   <h2>Parceiros estratégicos</h2>
                   <input type="radio" name="radio-btn" id="radio1Cr2" checked>
                   <input type="radio" name="radio-btn" id="radio2Cr2">
-                  <input type="radio" name="radio-btn" id="radio3Cr2"> 
-                  <input type="radio" name="radio-btn" id="radio4Cr2"> 
-                  <input type="radio" name="radio-btn" id="radio5Cr2"> 
+
                   <section class="slider">
-                     <section class="sliderWrapper">
-                        <div class="fisrt">1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
-                        <div>5</div>
+                     <section class="sliderWrapperSecond">
+                        <div class="fisrt">
+                          <img src="./public/companyIcon.png" alt="">
+                        </div>
+                        <div>
+                           <img src="./public/companyIcon.png" alt="">
+                        </div>
+                        <div>
+                           <img src="./public/companyIcon.png" alt="">
+                        </div>
+                        <div>
+                           <img src="./public/companyIcon.png" alt="">
+                        </div>
+                        <div>
+                           <img src="./public/companyIcon.png" alt="">
+                        </div>
+                        <div>
+                           <img src="./public/companyIcon.png" alt="">
+                        </div>
                      </section>
                   </section>
                   <div class="footCarrossel">
                       <label id="label1Cr2" for="radio1Cr2"></label>
                       <label id="label2Cr2" for="radio2Cr2"></label>
-                      <label id="label3Cr2" for="radio3Cr2"></label>
-                      <label id="label4Cr2" for="radio4Cr2"></label>
-                      <label id="label5Cr2" for="radio5Cr2"></label>
                   </div>
               </section>
           </section>
@@ -149,10 +182,10 @@
                       <h2>Nossa programação!</h2>
                   </div>
                   <div class="imgCard">
-                      <div></div>
+                      <img src="./public/calendar.png" alt="">
                   </div>
                   <div class="btnCard">
-                      <a href="">Ver mais +</a>
+                      <a href="">Ver mais <i data-lucide="move-right"></i></a>
                   </div>
               </div>
                <div class="card">
@@ -160,10 +193,10 @@
                       <h2>Nossos cursos!</h2>
                   </div>
                   <div class="imgCard">
-                      <div></div>
+                      <img src="./public/reuniao_cartum.png" alt="">
                   </div>
                   <div class="btnCard">
-                      <a href="">Ver mais +</a>
+                      <a href="">Ver mais <i data-lucide="move-right"></i></a>
                   </div>
               </div>
               <div class="card">
@@ -171,10 +204,10 @@
                       <h2>Visitas monitoradas!</h2>
                   </div>
                   <div class="imgCard">
-                      <div></div>
+                      <img src="./public/garden.png" alt="">
                   </div>
                   <div class="btnCard">
-                      <a href="">Ver mais +</a>
+                      <a href="">Ver mais <i data-lucide="move-right"></i></a>
                   </div>
               </div>
           </section>
@@ -183,27 +216,31 @@
         <section id="conteinerFinanciadores">
            <section class="carrossel">
               <section class="mainCarrossel">
-                  <h2>Parceiros estratégicos</h2>
+                  <h2>Financiadores do projeto</h2>
                   <input type="radio" name="radio-btn" id="radio1Cr3" checked>
                   <input type="radio" name="radio-btn" id="radio2Cr3">
-                  <input type="radio" name="radio-btn" id="radio3Cr3"> 
-                  <input type="radio" name="radio-btn" id="radio4Cr3"> 
-                  <input type="radio" name="radio-btn" id="radio5Cr3"> 
                   <section class="slider">
-                     <section class="sliderWrapper">
-                        <div class="fisrt">1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
-                        <div>5</div>
+                     <section class="sliderWrapperSecond">
+                        <div class="fisrt">
+                          <img src="./public/companyIcon.png" alt="">
+                        </div>
+                        <div>
+                          <img src="./public/companyIcon.png" alt="">
+                        </div>
+                        <div>
+                          <img src="./public/companyIcon.png" alt="">
+                        </div>
+                        <div>
+                          <img src="./public/companyIcon.png" alt="">
+                        </div>
+                        <div>
+                          <img src="./public/companyIcon.png" alt="">
+                        </div>
                      </section>
                   </section>
                   <div class="footCarrossel">
                       <label id="label1Cr3" for="radio1Cr3"></label>
                       <label id="label2Cr3" for="radio2Cr3"></label>
-                      <label id="label3Cr3" for="radio3Cr3"></label>
-                      <label id="label4Cr3" for="radio4Cr3"></label>
-                      <label id="label5Cr3" for="radio5Cr3"></label>
                   </div>
               </section>
           </section>

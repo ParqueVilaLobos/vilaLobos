@@ -24,7 +24,7 @@ const nextImg2 = ()=> {
     if(count2 > 5){
         count2 = 1;
     }
-        document.getElementById(`radio${count1}Cr2`).checked = true
+        document.getElementById(`radio${count2}Cr2`).checked = true
     count2++;
 }
 
@@ -33,6 +33,6 @@ const nextImg3 = ()=> {
     if(count3 > 5){
         count3 = 1;
     }
-        document.getElementById(`radio${count1}Cr3`).checked = true
+        document.getElementById(`radio${count3}Cr3`).checked = true
     count3++;
 }
