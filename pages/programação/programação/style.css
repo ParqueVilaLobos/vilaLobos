@@ -8,7 +8,185 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #4B7736;
+  height: 200px;
+}
 
+header hr {
+  width: 2px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+header .parte_de_cima {
+  display: flex;
+  width: 500px;
+}
+
+header .parte_de_cima img {
+  height: 100px;
+  margin: 0px 60px 0px 60px;
+}
+
+header nav ul li a {
+  color: white;
+}
+
+header nav ul li a:hover {
+  border-bottom: 2px solid white;
+  transition: width 1s ease-out;
+  animation: 2s;
+  text-decoration: none;
+}
+
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  padding-top: 10px;
+  margin: 0px 60px 0px 60px;
+}
+
+
+footer {
+  background-color: #4B7736;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vw;
+}
+
+footer .imgs {
+  display: flex;
+  width: 500px;
+  margin: 0px 0px 20px 0px;
+}
+
+footer .imgs img {
+  height: 100px;
+  margin: 0px 60px 0px 60px;
+}
+
+footer .imgs hr {
+  width: 2px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+}
+
+footer .textos {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 0px 60px 0px 60px;
+
+}
+
+footer .links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+
+
+/* From Uiverse.io by 0800Gonza */
+
+footer .links .card {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+
+}
+
+/* for all social containers*/
+footer .links .socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #AD97C7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 1s;
+
+}
+
+/* instagram*/
+footer .links .containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+
+/* twitter*/
+footer .links .containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+
+/* linkdin*/
+footer .links .containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+
+/* Whatsapp*/
+footer .links .containerFour:hover {
+  background-color: green;
+  transition-duration: 0.3s;
+}
+
+footer .links .socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+footer .links .socialSvg {
+  width: 17px;
+}
+
+footer .links .socialSvg path {
+  fill: #fff;
+}
+
+footer .links .socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+footer .textos .politicas,
+.voluntarios,
+.eventos h2 {
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  margin-left: -15px;
+}
+
+footer .textos .politicas h2 {
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  margin-left: -15px;
+}
+
+footer .textos .voluntarios h2 {
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  margin-left: -15px;
+}
 main {
   padding: 20px;
   max-width: 2000px;

@@ -1,10 +1,9 @@
-/* Página doe */
 
 * {
   border: 0;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 body {
@@ -16,10 +15,10 @@ body {
 }
 
 .titulo1 {
-  margin: 20px;
+  margin: 10px;
   background-color: #50772d;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 5px;
   text-align: center;
   color: white;
   font-family: "Nunito Sans", sans-serif;
@@ -29,6 +28,7 @@ h1 {
     margin-bottom: 30px;
 }
 /* HEADER COM IMAGENS E PARÁGRAFOS */
+ 
 .header-container {
   background-color: #eaeba0;
   display: flex;
@@ -62,122 +62,248 @@ h1 {
   flex: 1;
 }
 
-
-
-/*Caixa verde com textos que fica junto ao qr*/
-.doacao-texto {
-    max-width: 600px;
-
-}
-
-.doacao-texto h2 {
-    font-size: 18px;
-    margin: 0 0 10px 0;
-}
-
-.doacao-texto p {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-
-
-.preco {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-/* QR Code Sessão */
-.qrCodeDoe {
-  display: flex; /* Troca de grid para flexbox */
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  background-color: #c6e5b1;
+/*Texto bla bla bla*/
+.textoSobre {
+  margin: 10px;
   padding: 30px;
-  border-radius: 15px;
-  margin: 40px;
-}
-
-.qrCodeDoe .texto {
-  flex: 2;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 16px;
-  color: #000;
-  text-align: center;
-}
-
-.qrCodeDoe .texto p {
-  margin-bottom: 20px;
-}
-
-.qrCodeDoe .qrcode {
-  flex: 1;
-  text-align: center;
-}
-
-.qrCodeDoe .qrcode img {
-  max-width: 100%;
-  height: auto;
-  border: 2px solid #333;
-  border-radius: 10px;
-}
-
-.qrCodeDoe .qrcode p {
-  margin-top: 10px;
-  font-size: 14px;
-}
-.tabelaValores{
-  background-color: #50772d;
-  border-radius: 10px;
-  color: white;
-  font-family: "Nunito sans", sans-serif;
-}
-.tabelaValores ol{
- margin-bottom: 5px;
-}
-
-/*Basicamente o footer*/
-.titulo2 {
-  border-radius: 10px;
-  background-color: #50772d;
-  padding: 10px;
-  
-  text-align: center;
-  color: white;
   font-family: "Nunito Sans", sans-serif;
+  gap: 20px;
+
 }
 
-.leisIcentivo{
- 
-  background-color: #b99fcc;
-  margin: 20px;
-  border-radius: 10px;
-}
-
-.leisIcentivo p{
+.textoSobre p{
   text-align: center;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 14pt;
-}
-.botaolermais{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn-lermais {
-  background-color: #50772d;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5%;
-  cursor: pointer;
-  font-weight: bold;
+  color: #999;
   
 }
-
-.btn-lermais:hover {
-  background-color: #406020;
+h3{
+  text-align: center;
+  text-decoration: underline;
 }
 
+/*Formulario*/
+
+.formulario{
+  display: flex;
+  justify-items: left;
+  padding: 40px;
+ 
+}
+form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+      max-width: 600px;
+      max-height: 200px;
+    }
+.correto {
+      text-align: center;
+      padding: 5px;
+      color: black;
+      text-decoration: underline;
+      font-size: 16pt;
+}
+.formulario input {
+      flex: 1 1 180px;
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      border-color: black;
+      box-shadow: 0 0 5px black; 
+}
+
+input::placeholder {
+      color: #999;
+}
+.formulario .comprovante {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 5px;
+  align-items: center;
+  
+}
+.formulario .comprovante p{
+  color: black;
+}
+button {
+  font-size: 12pt;
+  padding: 4px 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+
+.qrCodeDoe {
+  display: inline-flex;
+  flex-direction: column;
+  left: 0;
+  margin: 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: #50772d;
+  border-radius: 5px;
+  padding: 40px;
+  gap: 10px;
+}
+
+.qrCodeDoe img{
+  
+  width: 50%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 9px;
+      
+}
+.qrCodeDoe p {
+  text-align: center;
+  font-size: 12pt;
+  color: white;
+  
+}
+.formulario {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.lado-esquerdo {
+  flex: 1;
+}
+
+.botao-enviar{
+ margin-top: 40px;
+}
+.leis-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1300px;
+  background-color: #eaeba0;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.leis-container h2 {
+  color: #50772d;
+  margin-bottom: 10px;
+}
+
+.leis-container p {
+  font-size: 16px;
+  color: #333;
+}
+
+.conteudo-leis {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.conteudo-leis ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.conteudo-leis.mostrar {
+  max-height: 800px;
+}
+
+button#botao-leia-mais {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #50772d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#botao-leia-mais:hover {
+  background-color: #3e5a23;
+}
+
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bloco-doacao {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bloco-doacao img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bloco-doacao p {
+    order: 2; /* garante que o texto fique depois da imagem */
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .container-formulario {
+    padding: 10px;
+  }
+
+  .formulario {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lado-esquerdo {
+    width: 100%;
+  }
+
+  form {
+    max-width: 100%;
+    max-height: none;
+  }
+
+  .formulario input {
+    width: 100%;
+    flex: none;
+  }
+
+  .comprovante {
+    text-align: center;
+  }
+
+  .qrCodeDoe {
+    width: 100%;
+    left: 0;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .qrCodeDoe img {
+    width: 60%;
+  }
+
+  .botao-enviar {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h1, h3 {
+    font-size: 20px;
+  }
+
+  .textoSobre p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
