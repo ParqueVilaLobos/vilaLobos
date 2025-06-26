@@ -1,0 +1,42 @@
+
+
+@media (max-width: 768px) {
+  
+  /* Cards em uma coluna */
+  #containerGestao2 {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  #containerGestao2 > div {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+  /* Seções com padding menor */
+  #containerGestao,
+  #containerHistoria,
+  #containerVilaLobos,
+  #containerCEAPAM {
+    padding: 2rem 1rem;
+  }
+
+  /* Imagens 100% da largura */
+  .grid-imagens img {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Lista CEAPAM central e mais fluida */
+  #containerCEAPAM ul {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+
+  main {
+    gap: 2rem;
+  }
+}

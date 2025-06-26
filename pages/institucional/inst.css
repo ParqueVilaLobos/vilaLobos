@@ -15,52 +15,70 @@ a {
     text-decoration: none;
 }
 
+p{
+  text-indent: 1rem; 
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+
+}
+
 body {
     font-family: "Nunito Sans", sans-serif;
-    height: 250vh;
+    height: 100%;
     width: 100%;
     background-color: white;
     display: grid;
+    gap: 5vh;  
     
 }
 
 h1 {
-  font-size: 2rem;      
+  font-size: 1.5rem;      
   font-weight: bold;
-  margin-bottom: 1rem;
+
 }
 
 
 main {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-rows: auto 2fr 0.5fr 0.8fr 1fr;
+  display: grid;
+  gap: 5vh;
+}
+
+#containerVilaLobos,
+#containerCEAPAM {
+  margin-top: -5vh; 
 }
 
 
-#containerGestao{        
-    padding: 5vh;
-    font-size: 1.5rem;
+#containerGestao {
+  padding: 2rem; 
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; 
 }
 
 
 #containerGestao2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 5vh;
   padding: 5vh;
 
 }
 
 #containerGestao2 > div {
-  padding: 10px;
+  font-size: 1.2rem;
+  padding: 3rem;
   border-radius: 20px;
   background-color: #FCFCE4;
-  font-size: 20px;
-  border: 2px  #DDE0B4; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #DDE0B4; 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#containerGestao2 > div p {
+  text-indent: 1rem; 
+  margin-bottom: 0.5rem;
 
 }
 
@@ -73,11 +91,15 @@ main {
     font-size: 1.5rem;
 }
 
-
 #containerHistoria .grid-imagens img:hover {
   transform: scale(1.05);
 }
-
+#containerCEAPAM .grid-imagens img:hover {
+  transform: scale(1.05);
+}
+#containerVilaLobos .grid-imagens img:hover {
+  transform: scale(1.05);
+}
 
 #containerVilaLobos{        
     display: flex;
@@ -86,6 +108,7 @@ main {
     padding: 5vh;
     background-color: #FCFCE4;
     font-size: 1.5rem;
+   max-height: max-content;
 }
 
 #containerVilaLobos2{        
@@ -98,7 +121,8 @@ main {
 }
 
 
-#containerCEAPAM{        
+#containerCEAPAM{  
+      
     display: flex;
     flex-direction: column;
     gap: 2svh;
@@ -107,10 +131,23 @@ main {
     font-size: 1.5rem;
 }
 
-#containerCEAPAM > ul{        
-    padding: 25PX;
-   
+#containerCEAPAM ul {
+  padding: 25px;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  list-style-position: inside; 
+  max-width: 600px; 
+  text-align: left; 
+  border-radius: 20px;
+  border: 2px solid #DDE0B4; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: #FCFCE4;
 }
+
+#containerCEAPAM  h4 {
+text-align: center;
+}
+
 
 /* imagens*/
 
@@ -129,7 +166,10 @@ main {
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-  background-color: rgb(75, 75, 75);
+  background-color: rgb(255, 255, 255);
+}
+footer{
+   margin-top: -5vh; 
 }
 
 
