@@ -1,0 +1,116 @@
+   body {
+      margin: 0;
+      background-color: #0d2c1c;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Nunito Sans", sans-serif;
+    }
+    .titulo{
+      border-bottom: 1px solid #ffffff;
+
+      
+    }
+    
+    .mapa-container {
+      margin-top: 20px;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+      width: 90vw;
+      height: auto;
+      max-width: 1200px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      border-radius: 5px;
+    }
+    .zoom-img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+      transform-origin: center center;
+      cursor: crosshair;
+      box-shadow: 0px 0px 2px;
+    }
+    .zoomed {
+      transform: scale(2);
+    }
+    .legenda {
+      background-color: #0d2c1c;
+      color: #ffffff;
+      padding: 30px;
+      text-align: left;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 160px;
+      justify-content: space-around;
+    }
+    .secao {
+      min-width: 200px;
+    }
+    .secao h2 {
+      color: #ffffff;
+      font-size: 1.4rem;
+      border-bottom: 1px solid #ffffff;
+      padding-bottom: 5px;
+      text-align: center;
+    }
+    .item {
+      margin: 5px 0;
+    }
+    .item::before {
+      content: "\2022";
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+    .verde { color: #2ecc71; }
+    .laranja { color: #e67e22; }
+    .amarelo { color: #f1c40f; }
+    .azul { color: #3498db; }
+    .vermelho { color: #e74c3c; }
+    .roxo { color: #9b59b6; }
+    .branco { color: #ffffff; }
+    
+    
+    @media (max-width: 768px) {
+  .legenda {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .secao {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .secao h2 {
+    font-size: 1.2rem;
+  }
+
+  .item {
+    font-size: 0.95rem;
+  }
+
+  .mapa-container {
+    width: 95vw;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .secao h2 {
+    font-size: 1.1rem;
+  }
+
+  .item {
+    font-size: 0.9rem;
+  }
+}
