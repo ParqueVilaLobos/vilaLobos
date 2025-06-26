@@ -11,13 +11,13 @@ navBar.innerHTML = `
     <div class="menu-mobile">
       <div class="hamburger" onclick="toggleMenu()">☰</div>
       <ul class="mobile-nav" id="mobileMenu">
-        <li><a href="../../pages/Doe-main/doe.html">Doe</a></li>
+        <li><a href="../../pages/Doe-main/index.html">Doe</a></li>
         <li><a href="">Mapa</a></li>
         <li><a href="">Institucional</a></li>
-        <li><a href="equipe.html">Equipe</a></li>
-        <li><a href="visitas.html">Visitas</a></li>
+        <li><a href="index.html">Equipe</a></li>
+        <li><a href="../../pages/visitas.html">Visitas</a></li>
         <li><a href="">Programação</a></li>
-        <li><a href="loja.html">Loja</a></li>
+        <li><a href="../../pages/index.html">Loja</a></li>
       </ul>
     </div>
 
@@ -27,11 +27,12 @@ navBar.innerHTML = `
         <li><a href="">Doe</a></li>
         <li><a href="">Mapa</a></li>
         <li><a href="">Institucional</a></li>
-        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="index.html">Equipe</a></li>
         <li><a href="visitas.html">Visitas</a></li>
         <li><a href="">Programação</a></li>
-        <li><a href="loja.html">Loja</a></li>
+        <li><a href="index.html">Loja</a></li>
       </ul>
     </nav>
   </header>
 `;
+g

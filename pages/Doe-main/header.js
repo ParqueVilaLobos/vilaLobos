@@ -17,11 +17,11 @@ navBar.innerHTML = `
         <li><a href="">Institucional</a></li>
         <li><a href="">Cursos</a></li>
         <li><a href="">Exposições</a></li>
-        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="index.html">Equipe</a></li>
         <li><a href="visitas.html">Visitas</a></li>
         <li><a href="">Institucional</a></li>
         <li><a href="">Programação</a></li>
-        <li><a href="loja.html">Loja</a></li>
+        <li><a href="index.html">Loja</a></li>
       </ul>
     </div>
 
@@ -34,11 +34,11 @@ navBar.innerHTML = `
         <li><a href="">Institucional</a></li>
         <li><a href="">Cursos</a></li>
         <li><a href="">Exposições</a></li>
-        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="index.html">Equipe</a></li>
         <li><a href="visitas.html">Visitas</a></li>
         <li><a href="">Institucional</a></li>
         <li><a href="">Programação</a></li>
-        <li><a href="loja.html">Loja</a></li>
+        <li><a href="index.html">Loja</a></li>
       </ul>
     </nav>
   </header>
