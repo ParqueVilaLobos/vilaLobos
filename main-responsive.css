@@ -126,11 +126,7 @@
     main {
         grid-template-rows: 8% 8% 10% 2fr 10%;
     }
-
-    #conteinerConheca {        
-       /* background-color: gray; */
-    }
-
+    
      .conhecaInside {
         height: 100%;
         padding-bottom: 5vh;
