@@ -1,6 +1,7 @@
 @media only screen and (max-width: 1000px){
     body {
         width: 100%;
+        gap: 15vh;
     }
 
     main {
@@ -112,21 +113,20 @@
         display: none;
     }
     .footCarrossel label {
-        width: 2dvh;
-        height: 2dvh;
+        width: 1.5dvh;
+        height: 1.5dvh;
     }
 }
 
 @media (max-width: 500px){
+    body {
+        gap: 10vh;
+    }
   
     main {
         grid-template-rows: 8% 8% 10% 2fr 10%;
     }
-
-    #conteinerConheca {        
-       /* background-color: gray; */
-    }
-
+    
      .conhecaInside {
         height: 100%;
         padding-bottom: 5vh;

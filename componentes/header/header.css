@@ -45,6 +45,6 @@ header hr {
     list-style: none;
     padding: 2vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-size: 1vw;
 }
